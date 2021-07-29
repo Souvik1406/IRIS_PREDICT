@@ -1,36 +1,22 @@
-<!DOCTYPE html>
-<html >
-<head>
-  <meta charset="UTF-8">
-  <title>From The Divine Academy</title>
-  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
-  
-</head>
+<html>
+  <title>The Divine Academy - IRIS PREDICT
+    <body bgcolor=#d4a3ae>
 
-<body style="background: #000;">
- <div class="login">
-  <h1> IRIS FLOWER DETECTION </h1><br>
+        <center>
+
+        <h1> IRIS FLOWER DETECTION </h1><br>
         
-  <form method="POST", action="{{url_for('home')}}">
-     <b> First value :  <input type="text", name='a', placeholder="enter 1"> <br><br>
-      Second value :  <input type="text", name='b', placeholder="enter 2"> <br><br>
-      Third value :  <input type="text", name='c', placeholder="enter 3"> <br><br>
-      Fourth value : <input type="text", name='d', placeholder="enter 4"> <br><br><br></b>
-      <input type="submit" , value='predict!' >
-  </form>
+        <form method="POST", action="{{url_for('home')}}">
+           <b> First value :  <input type="text", name='a', placeholder="enter 1"> <br><br>
+            Second value :  <input type="text", name='b', placeholder="enter 2"> <br><br>
+            Third value :  <input type="text", name='c', placeholder="enter 3"> <br><br>
+            Fourth value : <input type="text", name='d', placeholder="enter 4"> <br><br><br></b>
+            <input type="submit" , value='predict!' >
+        </form>
 
-  <img src='static\flower1.jpg' alt="flower">
-  
-</center>
+        <img src='static\flower1.jpg' alt="flower">
+        
+    </center>
 
-   <br>
-   <br>
-   {{ prediction_text }}
-
- </div>
-</body>
+    </body>
 </html>
